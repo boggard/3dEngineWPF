@@ -1,0 +1,67 @@
+﻿<Window x:Class="_3dEngineWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3dEngineWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="724.77" Width="1068.967" KeyDown="Window_KeyDown_1" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Loaded="Grid_Loaded" Margin="0,0,5,0">
+        <Image x:Name="image" HorizontalAlignment="Left" Margin="10,29,0,68" Width="857" Height="650"/>
+        <Button x:Name="button" Content="Добавить объект" HorizontalAlignment="Left" Margin="883,244,0,0" VerticalAlignment="Top" Width="160" Click="button_Click"/>
+        <TextBox x:Name="dgr" HorizontalAlignment="Left" Height="23" Margin="908,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="5"/>
+        <ListBox x:Name="list_objects" HorizontalAlignment="Left" Height="206" Margin="883,29,0,0" VerticalAlignment="Top" Width="160" MouseDoubleClick="list_objects_MouseDoubleClick" SelectionChanged="list_objects_SelectionChanged"/>
+        <Button x:Name="button1" Content="Переместить" HorizontalAlignment="Left" Height="24" Margin="909,489,0,0" VerticalAlignment="Top" Width="113" Click="button1_Click"/>
+        <TextBox x:Name="pos_x" HorizontalAlignment="Left" Height="21" Margin="908,421,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="114"/>
+        <TextBox x:Name="pos_y" HorizontalAlignment="Left" Height="21" Margin="908,442,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="114"/>
+        <TextBox x:Name="pos_z" HorizontalAlignment="Left" Height="21" Margin="908,463,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="114"/>
+        <Label x:Name="label" Content="Переещение объекта" HorizontalAlignment="Left" Margin="898,395,0,0" VerticalAlignment="Top" Width="130"/>
+        <Label x:Name="label1" Content="X&#xD;&#xA;Y&#xD;&#xA;Z" HorizontalAlignment="Left" Margin="883,426,0,0" VerticalAlignment="Top" Width="25" Height="63"/>
+        <Button x:Name="button1_Copy" Content="Масштабировать" HorizontalAlignment="Left" Height="24" Margin="909,612,0,0" VerticalAlignment="Top" Width="113" Click="button1_Copy_Click"/>
+        <TextBox x:Name="scale_x" HorizontalAlignment="Left" Height="21" Margin="908,544,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="114"/>
+        <TextBox x:Name="scale_y" HorizontalAlignment="Left" Height="21" Margin="908,565,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="114"/>
+        <TextBox x:Name="scale_z" HorizontalAlignment="Left" Height="21" Margin="908,586,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="114"/>
+        <Label x:Name="label_Copy" Content="Масштабирование" HorizontalAlignment="Left" Margin="898,518,0,0" VerticalAlignment="Top" Width="130"/>
+        <Label x:Name="label1_Copy" Content="X&#xA;Y&#xA;Z" HorizontalAlignment="Left" Margin="883,549,0,0" VerticalAlignment="Top" Width="25" Height="63"/>
+        <Button x:Name="button_2" Content="Удалить объект" HorizontalAlignment="Left" Margin="883,271,0,0" VerticalAlignment="Top" Width="160" Click="button_2_Click"/>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="1048">
+            <MenuItem Header="Сцена" Width="64" Height="24">
+                <MenuItem Header="Проецирование">
+                    <MenuItem Header="Центральное" Click="MenuItem_Click_1"/>
+                    <MenuItem Header="Параллельное" Click="MenuItem_Click_2"/>
+                </MenuItem>
+                <MenuItem Header="Вид">
+                    <MenuItem Header="Реалистичный" Click="MenuItem_Click_4"/>
+                    <MenuItem Header="Каркасный" Click="MenuItem_Click_5"/>
+                </MenuItem>
+                <MenuItem Header="Камера" Click="MenuItem_Click">
+                    <MenuItem Header="Точка зрения">
+                        <TextBox Width="65" Text="0"  LostFocus="TextBox_LostFocus"></TextBox>
+                        <TextBox Width="65" Text="0" LostFocus="TextBox_LostFocus_1"></TextBox>
+                        <TextBox Width="65" Text="-2000" LostFocus="TextBox_LostFocus_2"></TextBox>
+                    </MenuItem>
+                    <MenuItem Header="Точка центра">
+                        <TextBox Width="65" Text="0" LostFocus="TextBox_LostFocus_center_1"></TextBox>
+                        <TextBox Width="65" Text="0" LostFocus="TextBox_LostFocus_center_2"></TextBox>
+                        <TextBox Width="65" Text="0" LostFocus="TextBox_LostFocus_center_3"></TextBox>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="Сохранить" Click="MenuItem_Click"/>
+                <MenuItem Header="Открыть" Click="MenuItem_Click_3"/>
+                <Separator/>
+            </MenuItem>
+            <MenuItem Header="Выход" Width="62" Height="24" Click="MenuItem_Click_6"/>
+
+        </Menu>
+        <StackPanel HorizontalAlignment="Left" Height="66" Margin="908,329,0,0" VerticalAlignment="Top" Width="120">
+            <RadioButton x:Name="radio_Y" Content="Вращать вокруг Y" HorizontalAlignment="Left" Height="22" VerticalAlignment="Top" Width="114"/>
+            <RadioButton x:Name="radio_Z" Content="Вращать вокруг Z" HorizontalAlignment="Left" Height="22" VerticalAlignment="Top" Width="114"/>
+            <RadioButton x:Name="radio_X" Content="Вращать вокруг X" HorizontalAlignment="Left" Height="22" VerticalAlignment="Top" Width="114"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="35" Margin="909,650,0,0" VerticalAlignment="Top" Width="124">
+            <RadioButton x:Name="radio_sphere" Content="Камера по сфере" HorizontalAlignment="Left" VerticalAlignment="Top" IsChecked="True"/>
+            <RadioButton x:Name="radio_axis" Content="Камера вокруг оси"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

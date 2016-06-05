@@ -1,0 +1,38 @@
+﻿<Window x:Class="_3dEngineWPF.ObjectChange"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3dEngineWPF"
+        mc:Ignorable="d"
+        Title="Параметры объекта" Height="389.587" Width="387.234" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBox x:Name="outside_tower_height" HorizontalAlignment="Left" Height="23" Margin="241,12,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="outside_tower_radius" HorizontalAlignment="Left" Height="23" Margin="241,35,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="outside_tower_top_height" HorizontalAlignment="Left" Height="23" Margin="241,58,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="outside_tower_top_radius" HorizontalAlignment="Left" Height="23" Margin="241,81,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="outside_sphere_radius" HorizontalAlignment="Left" Height="23" Margin="241,104,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label" Content="Высота внешней башни" HorizontalAlignment="Left" Margin="10,12,0,0" VerticalAlignment="Top" Width="226" Height="23"/>
+        <Label x:Name="label_Copy" Content="Радиус внешней башни" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="226" Height="23"/>
+        <Label x:Name="label_Copy1" Content="Высота верхушки внешней башни" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top" Width="226" Height="23"/>
+        <Label x:Name="label_Copy2" Content="Радиус верхушки внешней башни" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top" Width="226" Height="23"/>
+        <Label x:Name="label_Copy3" Content="Радиус сферы внешней башни" HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top" Width="226" Height="23"/>
+        <TextBox x:Name="outside_wall_lenght" HorizontalAlignment="Left" Height="23" Margin="241,127,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label_Copy4" Content="Длина внешней стены" HorizontalAlignment="Left" Margin="10,127,0,0" VerticalAlignment="Top" Width="226" Height="23"/>
+        <TextBox x:Name="inside_tower_height" HorizontalAlignment="Left" Height="23" Margin="241,150,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label_Copy5" Content="Высота внутренней башни" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top" Width="226" Height="23"/>
+        <TextBox x:Name="inside_tower_radius" HorizontalAlignment="Left" Height="23" Margin="241,173,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label_Copy6" Content="Радиус внутренней башни" HorizontalAlignment="Left" Margin="10,173,0,0" VerticalAlignment="Top" Width="226" Height="23"/>
+        <TextBox x:Name="inside_tower_top_height" HorizontalAlignment="Left" Height="23" Margin="241,196,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label_Copy7" Content="Высота верхушки внутренней башни" HorizontalAlignment="Left" Margin="10,196,0,0" VerticalAlignment="Top" Width="226" Height="23"/>
+        <TextBox x:Name="inside_tower_top_radius" HorizontalAlignment="Left" Height="23" Margin="241,219,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label_Copy8" Content="Радиус верхушки внутренней башни" HorizontalAlignment="Left" Margin="10,219,0,0" VerticalAlignment="Top" Width="226" Height="23"/>
+        <TextBox x:Name="inside_sphere_radius" HorizontalAlignment="Left" Height="23" Margin="241,242,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label_Copy9" Content="Радиус сферы внутренней башни" HorizontalAlignment="Left" Margin="10,242,0,0" VerticalAlignment="Top" Width="226" Height="23"/>
+        <TextBox x:Name="inside_wall_lenght" HorizontalAlignment="Left" Height="23" Margin="241,265,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label_Copy10" Content="Длина внутренней стены" HorizontalAlignment="Left" Margin="10,265,0,0" VerticalAlignment="Top" Width="226" Height="23"/>
+        <Button x:Name="button" Content="Применить" HorizontalAlignment="Left" Margin="10,320,0,0" VerticalAlignment="Top" Width="351" Click="button_Click"/>
+        <TextBox x:Name="outside_box_count" HorizontalAlignment="Left" Height="23" Margin="241,288,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label_Copy11" Content="Количество блоков на внешней стене" HorizontalAlignment="Left" Margin="10,288,0,0" VerticalAlignment="Top" Width="226" Height="23"/>
+    </Grid>
+</Window>

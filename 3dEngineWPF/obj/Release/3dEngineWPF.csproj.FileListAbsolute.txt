@@ -1,0 +1,16 @@
+C:\Users\Alex\Documents\Visual Studio 2015\Projects\3dEngineWPF\3dEngineWPF\bin\Release\3dEngineWPF.exe.config
+C:\Users\Alex\Documents\Visual Studio 2015\Projects\3dEngineWPF\3dEngineWPF\bin\Release\3dEngineWPF.exe
+C:\Users\Alex\Documents\Visual Studio 2015\Projects\3dEngineWPF\3dEngineWPF\bin\Release\3dEngineWPF.pdb
+C:\Users\Alex\Documents\Visual Studio 2015\Projects\3dEngineWPF\3dEngineWPF\obj\Release\MainWindow.g.cs
+C:\Users\Alex\Documents\Visual Studio 2015\Projects\3dEngineWPF\3dEngineWPF\obj\Release\App.g.cs
+C:\Users\Alex\Documents\Visual Studio 2015\Projects\3dEngineWPF\3dEngineWPF\obj\Release\3dEngineWPF_MarkupCompile.cache
+C:\Users\Alex\Documents\Visual Studio 2015\Projects\3dEngineWPF\3dEngineWPF\obj\Release\3dEngineWPF_MarkupCompile.lref
+C:\Users\Alex\Documents\Visual Studio 2015\Projects\3dEngineWPF\3dEngineWPF\obj\Release\MainWindow.baml
+C:\Users\Alex\Documents\Visual Studio 2015\Projects\3dEngineWPF\3dEngineWPF\obj\Release\3dEngineWPF.g.resources
+C:\Users\Alex\Documents\Visual Studio 2015\Projects\3dEngineWPF\3dEngineWPF\obj\Release\_3dEngineWPF.Properties.Resources.resources
+C:\Users\Alex\Documents\Visual Studio 2015\Projects\3dEngineWPF\3dEngineWPF\obj\Release\3dEngineWPF.csproj.GenerateResource.Cache
+C:\Users\Alex\Documents\Visual Studio 2015\Projects\3dEngineWPF\3dEngineWPF\obj\Release\3dEngineWPF.exe
+C:\Users\Alex\Documents\Visual Studio 2015\Projects\3dEngineWPF\3dEngineWPF\obj\Release\3dEngineWPF.pdb
+C:\Users\Alex\Documents\Visual Studio 2015\Projects\3dEngineWPF\3dEngineWPF\obj\Release\ObjectChange.g.cs
+C:\Users\Alex\Documents\Visual Studio 2015\Projects\3dEngineWPF\3dEngineWPF\obj\Release\ObjectChange.baml
+C:\Users\Alex\Documents\Visual Studio 2015\Projects\3dEngineWPF\3dEngineWPF\obj\Release\3dEngineWPF.csprojResolveAssemblyReference.cache
